@@ -111,6 +111,7 @@ TACH::FAQは受講生の質問の重複をなくすために作るアプリで�
 | Column         | Type           |Options        |
 | :------------- | :------------- |:------------- |
 | name           | string         |null: false, unique: true, index: true|
+| status         | string         |null: false|
 
 #### Association
 - has_many :profiles
