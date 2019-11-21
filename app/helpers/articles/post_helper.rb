@@ -1,0 +1,2 @@
+module Articles::PostHelper
+end
