@@ -1,0 +1,31 @@
+<%= form_for @article, url: {controller: "post", action: "create" } do |f| %>
+
+  <div class="title">
+    <%= f.label :title %>
+    <%= f.text_field :title %>  
+    <% if @article.errors.messages[:title] != [] %>
+      <div class="warning_message">
+        <%= @errors %>
+      </div>
+    <% end %>
+
+  </div>
+  <div class="solution">
+    <%= f.label :solution %>
+    <%= f.text_field :solution %>
+    <% if @article.errors.messages[:solution] != [] %>
+      <div class="warning_message">
+        <%= @errors %>
+      </div>
+    <% end %>
+  </div>
+  <div class="factor">
+    <%= f.label :factor %>
+    <%= f.text_field :factor %>
+  </div>
+  <div class="knowledge">
+    <%= f.label :knowledge %>
+    <%= f.text_field :knowledge %> 
+  </div>
+  <%= f.submit "送信する" %>  
+<% end %>

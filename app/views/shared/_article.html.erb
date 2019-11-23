@@ -1,11 +1,11 @@
   <div class="article">
     <div class="article__title">
-      <p>タイトル:</p>
+      <%= "タイトル: #{article.title}" %>
     </div>
     <div class="article__solution">
-      <p>解決方法:</p>
+      <%= "解決方法:#{article.solution}" %>
     </div>
     <div class="article__box">
-      <%= link_to "詳細はクリック！", "#" %>
+      <%= link_to "詳細はクリック！", articles_post_path(article.id) %>
     </div>
   </div>
