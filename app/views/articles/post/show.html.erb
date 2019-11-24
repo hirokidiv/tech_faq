@@ -1,0 +1,21 @@
+<%= render "shared/header" %>
+<div class="top_wrapper">
+  <div class="article">
+    <div class="article__title">
+      <%= "タイトル: #{@article.title}" %>
+    </div>
+    <div class="article__solution">
+      <%= "解決方法:#{@article.solution}" %>
+    </div>
+    <div class="article__solution">
+      <%= "原因:#{@article.factor}" %>
+    </div>
+    <div class="article__solution">
+      <%= "学習したこと:#{@article.knowledge}" %>
+    </div>
+    <div class="article__box">
+      <%= link_to "詳細はクリック！", articles_post_path(@article.id) %>
+    </div>
+  </div>
+  <%= render "shared/side_bar" %>
+</div>

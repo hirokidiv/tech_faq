@@ -15,7 +15,7 @@ body{
 
 .header{
   width: 100vw;
-  height: 30px;
+  height: 60px;
   background-color:blue;
   display: flex;
   justify-content: space-between;
@@ -35,7 +35,16 @@ body{
   width: 70%;
 }
 .top_wrapper{
-  padding-top: 30px;
+  padding-top: 60px;
+  height: 60px;
+}
+.middle_wrapper{
+  height: calc( 100vh - 60px);
+}
+
+.articles{
+  height: calc( 100vh - 120px);
+  overflow: scroll;
 }
 // side_bar
 .side_bar__box{
@@ -44,7 +53,7 @@ body{
   background-color:red;
   position: fixed;
   right: 0;
-  top: 30px;
+  top: 60px;
 }
 
 .side_bar{
