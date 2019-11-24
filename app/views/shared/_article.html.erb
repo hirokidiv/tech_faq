@@ -2,6 +2,13 @@
     <div class="article__title">
       <%= "タイトル: #{article.title}" %>
     </div>
+    <div class="tags">
+      <%= "タグ:" %>
+      <% article.tag_list.each do |tag| %>
+        <span><%= tag %></span>
+      <% end %>
+    </div>
+    
     <div class="article__solution">
       <%= "解決方法:#{article.solution}" %>
     </div>
