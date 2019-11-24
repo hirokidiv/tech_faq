@@ -7,5 +7,13 @@
     </div>
     <div class="article__box">
       <%= link_to "詳細はクリック！", articles_post_path(article.id) %>
+      <div class="hidden_detail">
+        <div class="article__factor">
+          <%= "要因:#{article.factor}" %>
+        </div> 
+        <div class="article__knowledge">
+          <%= "学んだこと:#{article.knowledge}" %>
+        </div> 
+      </div>
     </div>
   </div>

@@ -8,16 +8,8 @@
             <%= link_to "MYPAGE", "#" %>      
           </li>
           <li class="list__box">
-            <%= link_to "ログアウト", "#" %>  
+            <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>  
           </li> 
-        <% else %>
-          <li class="list__box">
-            <%= link_to "新規会員登録", "#" %>     
-          </li>
-          <li class="list__box">
-            <%= link_to "ログイン" %>     
-          </li> 
-        <% end %>
           <li class="list__box">
             <%= link_to "新規投稿", new_articles_post_path %>     
           </li>
@@ -27,6 +19,14 @@
           <li class="list__box">
             <%= link_to "削除", "#" %>      
           </li>
+        <% else %>
+          <li class="list__box">
+            <%= link_to "新規会員登録", new_user_registration_path %>     
+          </li>
+          <li class="list__box">
+            <%= link_to "ログイン", new_user_session_path %>     
+          </li> 
+        <% end %>
       </ul>
 
 
