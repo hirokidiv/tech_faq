@@ -5,10 +5,8 @@
     <div class="tags">
       <%= "タグ:" %>
       <% article.tag_list.each do |tag| %>
-        <span><%= tag %></span>
+        <span class="tag"><%= tag %></span>
       <% end %>
-    </div>
-    
     <div class="article__solution">
       <%= "解決方法:#{article.solution}" %>
     </div>
