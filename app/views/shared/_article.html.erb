@@ -6,9 +6,11 @@
       <div class="article__tags__label">
         タグ:
       </div>
-      <div class="article__tags__box">
+      <div class="article__tags__box", data-role="tagsinput" >
         <% article.tag_list.each do |tag| %>
-          <%= tag %>
+          <span class="badge badge badge-info">
+            <%= tag %>
+          </span>
         <% end %>
       </div>
     </div>

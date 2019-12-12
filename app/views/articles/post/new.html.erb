@@ -10,7 +10,7 @@
   </div>
   <div class="tags">
     <%= f.label :tag_list %>
-    <%= text_field_tag 'article[tag_list]', @article.tag_list.join(",") %>
+    <%= text_field_tag 'article[tag_list]', @article.tag_list.join(","), data: {role: "tagsinput"} %>
   </div>
   <div class="solution">
     <%= f.label :solution %>
