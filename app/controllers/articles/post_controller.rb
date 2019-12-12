@@ -19,7 +19,7 @@ class Articles::PostController < ApplicationController
 
   private
   def article_params
-    params.require("article").permit(:title, :solution, :factor, :knowledge).merge(user_id: current_user.id)
+    params.require("article").permit(:title, :solution, :factor, :knowledge, :tag_list).merge(user_id: current_user.id)
   end
 
 end
